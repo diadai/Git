@@ -14,6 +14,7 @@ $ git add 文件名
 $ git commit -m "文件的描述"
 ```
 可以add多个文件,commit一次。
+
 **查看当前状态**
 
 ```
@@ -25,6 +26,7 @@ $ git status
 $ git diff +文件名
 ```
 注意修改文件后还是要再次commit，步骤和之前提交一样
+
 **查看从最近到最远的提交日志情况**
 
 ```
@@ -39,11 +41,13 @@ $ git reset --hard id      //id是commit id（版本号）
 $ git reset HEAD 文件名     //把暂存区的修改撤掉
 ```
 HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，以此类推......
+
 **记录你的每次命令**
 
 ```
 $ git reflog      //退回到上一个版本还能再返回来
 ```
+
 **撤销在工作区的修改**
 
 ```
@@ -60,12 +64,14 @@ $ git rm 文件名   //从版本库中删除文件
 $ git remote add origin git@github.com:name/文件名.git
 ```
 origin 是默认叫法，也可以是其他的，但是这个一看就知道是远程库
+
 **推送到远程库**
 
 ```
 $ git push -u origin master   // -u：是第一次推送
 ```
 实际是把分支 master推送到远程，后面就用$ git push  origin master推送更新修改
+
 **从远程库克隆**
 ```
 $ git clone git@github.com:name/文件名.git
